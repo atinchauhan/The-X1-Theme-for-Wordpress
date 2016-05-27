@@ -1,0 +1,52 @@
+/*
+Theme Name: X1
+Theme URI: https://www.facebook.com/aakash.verma.7798
+Description: This theme is made for the purpose of helping
+institutes. Anybody can change and alter this theme.
+Feel free to Contact me for any help.
+Version: .1 alpha
+Author: Aakash
+Author URI: https://www.facebook.com/aakash.verma.7798
+Tags: Beautiful, Circular, Free.
+*/
+* {
+    border: 1px solid red;
+    font-family:'Open Sans', sans-serif;
+}
+
+.outerbox {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header {
+    width: auto;
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul.menu {
+    list-style: none;
+    background: linear-gradient(to bottom right, #079AAB, #FFFFFF);
+    color: white;
+}
+
+a.menu {
+    color:white;
+}
+a:visited {
+    color:white;
+}
+
+li.menu-item{
+    padding: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
