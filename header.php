@@ -11,10 +11,15 @@
 </head>
 <body>
 <div class="header">
-    <h1>
-    <?php bloginfo('name'); ?><br>
-    <h2><?php bloginfo('description'); ?></h2>
-    </h1>
+    <div class="hdtext">
+            <h1>
+            <?php bloginfo('name'); ?><br>
+            <h2><?php bloginfo('description'); ?></h2>
+            </h1>
+    </div>
+    <div class="hdimg">
+        <?php echo get_avatar(get_the_author_meta( 'ID' ),                          100); ?>
+    </div>
 </div>
 <nav class="menu">
     <?php wp_nav_menu( array('theme_location' => 'header-menu')); ?>
