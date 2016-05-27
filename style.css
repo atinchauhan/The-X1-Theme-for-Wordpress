@@ -24,11 +24,10 @@ a {
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    background-image: url(x1.jpg);
+    background-image: url(x2.jpg);
+    background-attachment: fixed;
 }
-img.outerbox {
-    position: fixed;
-}
+
 
 .header {
     width: auto;
@@ -44,6 +43,10 @@ img.outerbox {
 }
 .header:hover {
     box-shadow: 0px 2px 5px 1px ;
+}
+
+.foreffect {
+    background-image: url(x1.jpg);
 }
 
 .hdtext {
@@ -90,7 +93,7 @@ li.menu-item{
 }
 
 li.menu-item:hover {
-    box-shadow: 0px 2px 5px 1px ;
+    box-shadow: 0px 2px 5px 1px transparent;
 }
 
 
@@ -99,22 +102,69 @@ li.menu-item:hover {
 .content {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    margin-top: 3%;
 }
 
 .post-area {
     display: flex;
+    flex-direction: column;
     flex-grow: 1;
-    flex-wrap: wrap;
+
 }
 
 .sidebar-area {
     display: flex;
-    flex-grow: 1;
-    align-self: left;
-    width: 15%;
+    width: 20%
 }
 
 .posts {
-    flex-grow: 1;
-    width: 30%;
+    display: flex;
+    width: 90%;
+    margin-left: 2%;
+    margin-top: 2%;
+    flex-direction: row;
+    align-items: stretch;
+    padding-left: 2%;
+    margin-bottom: 2%;
+}
+
+.title-post {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    background: radial-gradient(circle, transparent 20%, rgb(2, 124, 144) 90%);
+    line-height: 400%;
+    box-shadow: 2px 3px 5px 2px rgba(0, 0, 0, 0.4);
+    transition: all .5s;
+    font-size: 120%;
+    color:#262B2D;
+    padding-top: 10px;
+}
+
+.post-content {
+    color:white;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    flex-grow: 2;
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 22px;
+    padding: 2%;
+    background-color: rgba(9, 103, 113, 0.83);
+    box-shadow: 2px 3px 5px 2px rgba(0, 0, 0, 0.4);
+    transition: all .5s;
+}
+
+.title-post:hover {
+    box-shadow: 2px 3px 5px 2px transparent;
+    background-color: #10AAD8;
+    color:white;
+}
+
+.post-content:hover {
+    box-shadow: 2px 3px 5px 2px transparent;
+    background-color: rgb(9, 103, 113);
 }
