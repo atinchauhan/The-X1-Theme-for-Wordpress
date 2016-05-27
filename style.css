@@ -24,7 +24,10 @@ a {
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    background-color: #efefef;
+    background-image: url(x1.jpg);
+}
+img.outerbox {
+    position: fixed;
 }
 
 .header {
@@ -40,7 +43,7 @@ a {
     transition: all .5s;
 }
 .header:hover {
-    box-shadow: 0px 2px 5px 1px;
+    box-shadow: 0px 2px 5px 1px ;
 }
 
 .hdtext {
@@ -50,9 +53,11 @@ a {
     flex-grow: 1;
     padding-top: 1.7%;
 }
-img.hdimg {
-    border-radius: 20%;
+
+.avatar {
+    border-radius: 50px;
 }
+
 .menu-navigation-container{
     width: 100%;
 }
@@ -86,4 +91,30 @@ li.menu-item{
 
 li.menu-item:hover {
     box-shadow: 0px 2px 5px 1px ;
+}
+
+
+/* Posts */
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.post-area {
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+
+.sidebar-area {
+    display: flex;
+    flex-grow: 1;
+    align-self: left;
+    width: 15%;
+}
+
+.posts {
+    flex-grow: 1;
+    width: 30%;
 }
