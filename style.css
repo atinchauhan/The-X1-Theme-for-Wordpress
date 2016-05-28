@@ -7,7 +7,7 @@ Feel free to Contact me for any help.
 Version: .1 alpha
 Author: Aakash
 Author URI: https://www.facebook.com/aakash.verma.7798
-Tags: Beautiful, Circular, Free.
+Tags: Beautiful, Circular, Free, glass.
 */
 * {
     border: px solid red;
@@ -114,10 +114,6 @@ li.menu-item:hover {
 
 }
 
-.sidebar-area {
-    display: flex;
-    width: 30%;
-}
 
 .posts {
     display: flex;
@@ -155,10 +151,11 @@ li.menu-item:hover {
     border-top-right-radius: 22px;
     border-bottom-right-radius: 22px;
     padding: 2%;
-    background-color: rgba(9, 103, 113, 0.94);
+    background-color: rgba(7, 1, 58, 0.18);
     box-shadow: 2px 3px 5px 2px rgba(0, 0, 0, 0.4);
     transition: all .5s;
     width: 80%;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.44), rgba(7, 1, 58, 0.18));
 }
 
 .title-post:hover {
@@ -179,8 +176,101 @@ li.menu-item:hover {
     flex-grow: 0;
 }
 
+.avatar-120 {
+    transition: all .5s;
+}
+
+.avatar-120:hover {
+    box-shadow: 2px 3px 5px 2px rgba(0, 0, 0, 0.4);
+}
+
 .title-text {
     padding: 2%;
     flex-grow: 2;
     vertical-align: text-top;
+}
+
+/* The Sidebar */
+
+.sidebar-area {
+    display: flex;
+    width: 30%;
+    margin-top: 3%;
+    margin-right:1%;
+    margin-bottom: 2%;
+    color:white;
+}
+
+.sidebar-inside {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 9%;
+    background: linear-gradient(to bottom, rgba(152, 7, 60, 0.15), rgba(128, 6, 6, 0.12));
+    transition: all .5s;
+    box-shadow: 2px 3px 5px 2px rgba(0, 0, 0, 0.4);
+}
+
+
+div.widget_recent_entries > ul {
+    margin-left: -10%;
+    font-size: 15px;
+    line-height: 157%;
+}
+
+p > img {
+    border-radius: 10px;
+}
+
+/* The Readmore button */
+
+.readmore {
+    display: inline-flex;
+    transition: all .2s;
+    background-color: #E91E63;
+    padding: 5px;
+    border-radius: 2px 20px 20px 2px;
+    font-size: 90%;
+    width: 12%;
+    box-shadow: 2px 3px 5px 2px rgba(0, 0, 0, 0.4);
+}
+
+.readmore:hover {
+    width: 20%;
+    padding-left: 2%;
+    box-shadow: 2px 3px 5px 2px rgba(0, 0, 0, 0);
+    background-color: rgb(49, 156, 14);
+}
+
+div > input {
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.searchform {
+    line-height: 150%;
+}
+
+#searchsubmit {
+    background-color: #14A6D2;
+    color: white;
+    border: 0px solid red;
+    padding: 5px;
+    transition: all .2s;
+}
+
+#searchsubmit:hover {
+    box-shadow: 2px 3px 5px 2px rgba(0, 0, 0, .4)
+}
+
+/* The Footer */
+
+.footer {
+    border-radius: 10px 10px 0px 0px;
+    margin-left: 1%;
+    margin-right: 1%;
+    box-shadow: 2px 3px 5px 2px rgba(0, 0, 0, .4);
+    padding: 5px;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.14), rgba(0, 0, 0, 0.26));
+    color:white;
+    font-size: 67%;
 }

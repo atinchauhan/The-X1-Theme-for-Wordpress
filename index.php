@@ -19,13 +19,12 @@
                             </div>
                         </div>
                         <div class="post-content">
-                            <?php the_content("Read More "); ?>
+                            <?php the_content("<span class='readmore'>Read More</span>"); ?>
                         </div>
                     </div>
                     <?php endwhile; ?>
         </div>
         <div class="sidebar-area">
-        asdf
             <?php get_sidebar(); ?>
         </div>
     </div>

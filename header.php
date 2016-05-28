@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/style.css">
     <title>
-        <?php wp_title( '|', true, 'right'); ?>
+        <?php bloginfo('name'); ?>&nbsp;|&nbsp;<?php bloginfo('description'); ?>
     </title>
 </head>
 <body>
