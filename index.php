@@ -9,8 +9,14 @@
           <?php while ( have_posts() ) : the_post(); ?>
                     <div class="posts">
                         <div class="title-post">
-                            <?php echo get_avatar(get_the_author_meta( 'ID' ),120);?>
-                            <?php the_title()?>
+                            <div class="title-avatar">
+                                <?php echo get_avatar(get_the_author_meta( 'ID' ),120);?>
+                                <br> By <?php the_author(); ?>
+                                <hr style="width:100%;margin-top:10%;margin-bottom:1%;">
+                            </div>
+                            <div class="title-text">
+                                <h3><?php the_title()?></h3>
+                            </div>
                         </div>
                         <div class="post-content">
                             <?php the_content("Read More "); ?>
