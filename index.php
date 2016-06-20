@@ -26,7 +26,8 @@
                             <hr style="width:100%">
                             <div class="tags">
                                 Category:- <?php echo get_the_category_list(__('  ,  ' , 'X1' )) ?><br>
-                                Tags :- <?php echo get_the_tag_list(' ', __('  ,  ','X1')) ?>                  <br>
+                                Tags :- <?php echo get_the_tag_list(' ', __('  ,  ','X1')) ?><br>
+                                Posted on :- <?php the_date(); ?>
                                 <?php comments_template() ; ?>
                             </div>
                         </div>

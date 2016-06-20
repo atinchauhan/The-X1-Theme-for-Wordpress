@@ -10,7 +10,7 @@ Author URI: https://www.facebook.com/aakash.verma.7798
 Tags: Beautiful, Circular, Free, glass.
 */
 * {
-    border: px solid red;
+    border: 1px solid red;
     font-family:'Open Sans', sans-serif;
 }
 
@@ -155,10 +155,10 @@ li.menu-item:hover {
     transition: all .5s;
     width: 80%;
     background: linear-gradient(to top, rgba(255, 255, 255, 0.44), rgba(7, 1, 58, 0.18));
-    text-shadow: 1px 2px 1px 2px black;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    text-shadow: 1px 1px 3px black;
 }
 
 .title-post:hover {
@@ -281,10 +281,19 @@ div > input {
     font-size: 67%;
 }
 
-.tags > a{
-    background-color: #FF5722;
-    padding: 5px;
+.tags > a {
+    background-color: #2196F3;
+    padding-left: 5px;
+    padding-right: 5px;
     border-radius: 5px 5px 5px 5px;
+}
+
+.tags {
+    line-height: 150%;
+    font-size: 90%;
+    background: rgba(0,0,0,0.14);
+    padding: 5px;
+    border-radius: 5px;
 }
 
 /* The Comment Area */
