@@ -10,10 +10,10 @@ Author URI: https://www.facebook.com/aakash.verma.7798
 Tags: Beautiful, Circular, Free, glass.
 */
 * {
-    border: 1px solid red;
+    border: px solid red;
     font-family:'Open Sans', sans-serif;
 }
-
+/*#266a75*/
 a {
     color:white;
     text-decoration: none;
@@ -24,7 +24,7 @@ a {
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    background-image: url(x2.jpg);
+    background-image: url(x9.png);
     background-attachment: fixed;
 }
 
@@ -35,7 +35,7 @@ a {
     margin-top: 1%;
     display: flex;
     flex-direction: row;
-    background: linear-gradient(to left,#03A9F4, rgba(0, 188, 212, 0.34));
+    background: linear-gradient(to left,rgba(0, 0, 0, 0.62), rgb(255, 255, 255));
     color: #404040;
     text-shadow: 2px 2px 8px white;
     box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.4);
@@ -46,7 +46,7 @@ a {
 }
 
 .foreffect {
-    background-image: url(x1.jpg);
+;
     background-attachment: fixed;
 }
 
@@ -70,16 +70,21 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
     margin-top: 2%;
+    justify-content: center;
+    font-size: 16px;
 }
 
 ul.menu {
     list-style: none;
-    background: linear-gradient(to bottom, #0fb8ad, rgb(5, 255, 197));
-    color: white;
+    background: linear-gradient(to left, rgba(148, 148, 148, 0.69), rgba(0, 0, 0, 0.66), rgba(255, 255, 255, 0.61));
     margin-top: 0px;
     margin-bottom: 0px;
+}
+
+li > a {
+    color:white;
+    font-weight: 200;
 }
 
 li.menu-item{
@@ -105,12 +110,16 @@ li.menu-item:hover {
     flex-direction: row;
     justify-content: center;
     margin-top: 3%;
+    min-height: 0;
+    min-width: 0;
 }
 
 .post-area {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    min-width: 0;
+    min-height: 0;
 }
 
 
@@ -123,6 +132,8 @@ li.menu-item:hover {
     align-items: stretch;
     padding-left: 2%;
     margin-bottom: 2%;
+    min-width: 0;
+    min-height: 0;
 }
 
 .title-post {
@@ -132,7 +143,7 @@ li.menu-item:hover {
     align-items: center;
     justify-content: center;
     border-radius: 22px;
-    background:rgba(16, 170, 216, 0.94);
+    background:rgba(75, 76, 76, 0.39);
     line-height: 150%;
     box-shadow: 2px 3px 5px 2px rgba(0, 0, 0, 0.4);
     transition: all .5s;
@@ -154,7 +165,7 @@ li.menu-item:hover {
     box-shadow: 2px 3px 5px 2px rgba(0, 0, 0, 0.4);
     transition: all .5s;
     width: 80%;
-    background: linear-gradient(to top, rgba(255, 255, 255, 0.44), rgba(7, 1, 58, 0.18));
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.44), rgba(38, 37, 39, 0.68));
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -163,12 +174,12 @@ li.menu-item:hover {
 
 .title-post:hover {
     box-shadow: 2px 3px 5px 2px transparent;
-    background-color: #10AAD8;
+    background-color: rgba(17, 20, 21, 0.55);
 }
 
 .post-content:hover {
     box-shadow: 2px 3px 5px 2px transparent;
-    background-color: rgb(9, 103, 113);
+    background-color: rgba(17, 20, 21, 0.55);
 }
 
 .title-avatar {
@@ -230,7 +241,7 @@ p > img {
 .readmore {
     display: inline-flex;
     transition: all .2s;
-    background-color: #E91E63;
+    background-color: rgba(32, 47, 60, 0.58);
     padding: 5px;
     border-radius: 2px 20px 20px 2px;
     font-size: 90%;
@@ -243,7 +254,7 @@ p > img {
     width: 20%;
     padding-left: 2%;
     box-shadow: 2px 3px 5px 2px rgba(0, 0, 0, 0);
-    background-color: rgb(49, 156, 14);
+    background-color: rgba(32, 47, 60, 0.90);
 }
 
 div > input {

@@ -15,7 +15,7 @@
                                 <hr style="width:100%;margin-top:10%;margin-bottom:1%;">
                             </div>
                             <div class="title-text">
-                                <h3><?php the_title()?></h3><br>
+                                <h3><a href=" <?php the_permalink(); ?> "><?php the_title()?></a></h3><br>
                                 <hr style="margin-top:-30px"><?php comments_number( "No Comments <br> :(" ); ?>
                             </div>
                         </div>
