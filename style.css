@@ -7,7 +7,7 @@ Feel free to Contact me for any help.
 Version: .1 alpha
 Author: Aakash
 Author URI: https://www.facebook.com/aakash.verma.7798
-Tags: Beautiful, Circular, Free, glass.
+Tags: Beautiful, Circular, Free, glass, Classy.
 */
 * {
     border: px solid red;
@@ -96,6 +96,8 @@ li.menu-item{
     transition: all .5s;
     text-shadow: 2px 2px 8px black;
     box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.4);
+    border-top-left-radius: 22px;
+    border-bottom-right-radius: 22px;
 }
 
 li.menu-item:hover {
@@ -227,9 +229,10 @@ li.menu-item:hover {
 
 
 div.widget_recent_entries > ul {
-    margin-left: -10%;
+    margin-left: -5%;
     font-size: 15px;
     line-height: 157%;
+    list-style-type: disc;
 }
 
 p > img {
@@ -264,6 +267,7 @@ div > input {
 
 .searchform {
     line-height: 150%;
+    margin-top: 20px;
 }
 
 #searchsubmit {
@@ -348,4 +352,76 @@ textarea#comment {
 
 input {
     border-radius: 10px;
+}
+
+/*404 Page */
+
+.not-found-area {
+    color:white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.not-found-text {
+    text-align: center;
+
+    padding-top:2px;
+    padding-bottom: 2px;
+    padding: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#not-found-text {
+    background-color: rgba(125, 40, 40, 0.49);
+    border-top-left-radius: 22px;
+    border-bottom-right-radius: 22px;
+    padding: 20px;
+}
+
+.not-found-extra {
+    text-align: center;
+}
+
+#not-found-home-button {
+    background-color: rgba(33, 90, 115, 0.63);;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-left-radius: 22px;
+    border-bottom-right-radius: 22px;
+}
+
+.widget_recent_entries {
+    background: linear-gradient(to left, rgba(191, 191, 191, 0), transparent, rgba(0, 0, 0, 0.49), transparent ,rgba(226, 226, 226, 0));
+    margin-bottom: 20px;
+}
+
+.widget_tag_cloud {
+    background:linear-gradient(to left, rgba(191, 191, 191, 0), transparent, rgba(38, 53, 60, 0.63), transparent ,rgba(226, 226, 226, 0));
+}
+
+span#tags a {
+    background-color: rgba(26, 82, 105, 0.81);
+    padding: 5px;
+    border-radius: 20px 2px 2px 2px;
+    margin: 20px;
+}
+
+#tags {
+    font-size: 20px;
+    background:linear-gradient(to left, transparent, transparent, transparent, transparent, rgb(14, 39, 49));
+    padding: 10px;
+    border-radius: 20px;
+    padding-bottom: 7px;
+}
+/*Fonts*/
+h1 {
+    font-size: 2.5vw;
+}
+
+h2 {
+    font-size: 1.5vw;
 }
