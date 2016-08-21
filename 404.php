@@ -15,4 +15,10 @@
         </div>
     </div>
 <?php get_footer(); ?>
+<script>
+$(function(){
+    $('h2.widgettitle').after("<hr class='recent_post_title_id'>");
+    $('div.widget_recent_entries').append("<hr class='recent_post_title_id'><br>");
+})
+</script>
 </div>

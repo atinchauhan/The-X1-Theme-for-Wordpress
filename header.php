@@ -5,6 +5,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/style.css">
+    <script   src="https://code.jquery.com/jquery-3.1.0.slim.min.js"   integrity="sha256-cRpWjoSOw5KcyIOaZNo4i6fZ9tKPhYYb6i5T9RSVJG8="   crossorigin="anonymous"></script>
     <title>
         <?php bloginfo('name'); ?>&nbsp;|&nbsp;<?php bloginfo('description'); ?>
     </title>
