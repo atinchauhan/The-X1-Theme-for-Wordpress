@@ -13,6 +13,7 @@ Tags: Beautiful, Circular, Free, glass, Classy.
     border: px solid red;
     font-family:'Open Sans', sans-serif;
     font-size: medium;
+    overflow-x: hidden;
 }
 /*#266a75*/
 a {
@@ -65,6 +66,13 @@ a {
 
 .menu-navigation-container{
     width: 100%;
+    transition: all .4s;
+}
+
+.menu-navigation-container:hover {
+    background-color: #174c71;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 .menu {
@@ -216,6 +224,7 @@ li.menu-item:hover {
     margin-top: 3%;
     margin-bottom: 2%;
     color:white;
+    transition: all .5s;
 }
 
 .sidebar-inside {
@@ -301,15 +310,22 @@ div > input {
     padding-left: 5px;
     padding-right: 5px;
     border-radius: 5px 5px 5px 5px;
+    transition: all .5s;
 }
 
 .tags {
-    line-height: 150%;
+    line-height: 154%;
     font-size: 90%;
     background: rgba(0,0,0,0.14);
     padding: 5px;
     border-radius: 5px;
 }
+
+.tags > a:hover {
+    background-color: #af23dc;
+    margin-left: 20px;
+}
+
 
 /* The Comment Area */
 .comments-area {
@@ -450,11 +466,26 @@ span#tags a:hover {
     border-radius: 20px;
     padding-bottom: 7px;
 }
-/*Fonts*/
-h1 {
-    font-size: 2.5vw;
+
+/*Search Template*/
+.search-banner {
+    padding: 1%;
+    color:white;
+    background:linear-gradient(to right, transparent, #2fcab4, #7abfb5, transparent, transparent, transparent);
+    transition: all .5s;
+    font-size: 20px;
+    margin-top: 1%;
+    padding-left: 4%;
 }
 
-h2 {
-    font-size: 1.5vw;
+.search-banner:hover {
+    background-color: white;
+}
+
+/*Fonts will be done by JQuery*/
+/*Media Query Time*/
+@media only screen and (max-width: 1000px) {
+    .sidebar-area {
+        display: none;
+    }
 }

@@ -42,3 +42,40 @@
 
     <?php get_footer(); ?>
 </div>
+<script>
+$(window).resize(function(){
+    var height = $(window).height();
+    var width = $(window).width();
+    var ratio = width/height;
+    $("p").css("font-size",ratio*28);
+    $(".readmore").css("font-size",ratio*26);
+    $("h3>a").css("font-size",ratio*35);
+    $(".avatar-120").css({"height":ratio*200, "width":ratio*200});
+    $(".title-avatar").css("font-size",ratio*35);
+    $(".title-text").css("font-size",ratio*35);
+    $(".tags,div.tags>a").css("font-size",ratio*30);
+});
+var height = $(window).height();
+var width = $(window).width();
+var ratio = width/height;
+$("p").css("font-size",ratio*28);
+$(".readmore").css("font-size",ratio*26);
+$("h3>a").css("font-size",ratio*35);
+$(".avatar-120").css({"height":ratio*200, "width":ratio*200});
+$(".title-avatar").css("font-size",ratio*35);
+$(".title-text").css("font-size",ratio*35);
+$(".tags,div.tags>a").css("font-size",ratio*30);
+$(".post-content,.title-post").mouseover(function(){
+    $('.sidebar-area').css("width","0px");
+    setTimeout (function(){
+            $('.sidebar-area').css("display","none");
+    },500);
+})
+$(".post-content,.title-post").mouseout(function(){
+    $('.sidebar-area').css("width","50%");
+    setTimeout (function(){
+        $('.sidebar-area').css("display","flex");
+    },500);
+})
+
+</script>
